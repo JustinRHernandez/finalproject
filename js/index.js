@@ -1,3 +1,5 @@
 $(document).ready(function(){
-  //enter code here
+  // var h = $("header").height();
+  // $(".main__nav").height(h);
+  // $(".socialmedia").height(h);
 });

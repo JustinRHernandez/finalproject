@@ -14,7 +14,6 @@ body {
 
 ul {
   list-style: none;
-  margin-bottom: 0;
   padding-left: 4%;
 }
 
@@ -30,14 +29,19 @@ a {
   text-decoration: none;
 }
 
-.listorder--float {
-  float: left;
-}
-
-.main__nav--container {
+header {
   float: left;
   padding-bottom: 1.25%;
   width: 100%;
+}
+
+.arrow {
+  padding-left: 4%;
+  width: 6%;
+}
+
+.listorder--float {
+  float: left;
 }
 
 .logo {
