@@ -74,7 +74,7 @@ header {
   width: 33.333%;
 }
 
-#secondary__nav--design--container {
+#secondary__nav--design--container, #secondary__nav--photography--container{
   background: blue;
   clear: both;
   padding-top: 1%;
@@ -88,12 +88,25 @@ header {
   color: white;
   background: blue;
   margin: 0 auto;
-  width: 50%;
+  width: 40%;
 }
 
 #secondary__nav--design li {
   text-align: center;
   width: 33.333%;
+}
+
+#secondary__nav--photography {
+  clear: both;
+  color: white;
+  background: blue;
+  margin: 0 auto;
+  width: 25%;
+}
+
+#secondary__nav--photography li {
+  text-align: center;
+  width: 50%;
 }
 
 .imagegallery {
