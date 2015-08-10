@@ -12,6 +12,10 @@ body {
   height: 0;
 }
 
+.hide {
+  display: none;
+}
+
 ul {
   list-style: none;
   padding-left: 4%;
@@ -67,6 +71,28 @@ header {
 }
 
 .socialmedia li {
+  width: 33.333%;
+}
+
+#secondary__nav--design--container {
+  background: blue;
+  clear: both;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#secondary__nav--design {
+  clear: both;
+  color: white;
+  background: blue;
+  margin: 0 auto;
+  width: 50%;
+}
+
+#secondary__nav--design li {
+  text-align: center;
   width: 33.333%;
 }
 
