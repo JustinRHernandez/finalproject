@@ -35,7 +35,7 @@ a {
 
 header {
   float: left;
-  padding-bottom: 1.25%;
+  padding-bottom: 2.25%;
   width: 100%;
 }
 
@@ -112,4 +112,32 @@ header {
 .imagegallery {
   overflow: hidden;
   width: 100%;
+}
+
+/* Begin Styling for Design Projects */
+
+.projectcontainer {
+  clear: both;
+  width: 100%;
+}
+
+.projecthero {
+  float: left;
+  width: 60%;
+}
+.projectdescription {
+  float: left;
+  width: 39%;
+}
+
+.projectimage--largehorizontal {
+  float: left;
+  margin-top: 2%;
+  width: 60%;
+}
+
+.projectimage--largevertical {
+  float: left;
+  margin-top: 2%;
+  width: 38%;
 }
