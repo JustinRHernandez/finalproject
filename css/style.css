@@ -1,0 +1,143 @@
+body {
+  max-width: 100%;
+  padding: 1%;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.hide {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 4%;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 3%;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  float: left;
+  padding-bottom: 2.25%;
+  width: 100%;
+}
+
+.arrow {
+  padding-left: 4%;
+  width: 6%;
+}
+
+.listorder--float {
+  float: left;
+}
+
+.logo {
+  float: left;
+  width: 20%;
+}
+
+.main__nav {
+  float: left;
+  width: 70%;
+}
+
+.main__nav li {
+  font-size: 1em;
+  font-weight: bold;
+  width: 25%;
+}
+
+.socialmedia {
+  float: left;
+  text-align: right;
+  width: 10%;
+}
+
+.socialmedia li {
+  width: 33.333%;
+}
+
+#secondary__nav--design--container, #secondary__nav--photography--container{
+  background: blue;
+  clear: both;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#secondary__nav--design {
+  clear: both;
+  color: white;
+  background: blue;
+  margin: 0 auto;
+  width: 40%;
+}
+
+#secondary__nav--design li {
+  text-align: center;
+  width: 33.333%;
+}
+
+#secondary__nav--photography {
+  clear: both;
+  color: white;
+  background: blue;
+  margin: 0 auto;
+  width: 25%;
+}
+
+#secondary__nav--photography li {
+  text-align: center;
+  width: 50%;
+}
+
+.imagegallery {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Begin Styling for Design Projects */
+
+.projectcontainer {
+  clear: both;
+  width: 100%;
+}
+
+.projecthero {
+  float: left;
+  width: 60%;
+}
+.projectdescription {
+  float: left;
+  width: 39%;
+}
+
+.projectimage--largehorizontal {
+  float: left;
+  margin-top: 2%;
+  width: 60%;
+}
+
+.projectimage--largevertical {
+  float: left;
+  margin-top: 2%;
+  width: 38%;
+}
