@@ -3,17 +3,42 @@ body {
   padding: 1%;
 }
 
+.blue {
+  background: blue;
+}
+
 .clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.float-none {
   clear: both;
-  height: 0;
 }
 
 .hide {
   display: none;
+}
+
+.container {
+  margin: 0px auto;
+  max-width: 1920px;
+  width: 100%;
+}
+
+.rotate {
+  transform: rotate(180deg) translate(-100%,-100%);
+  -webkit-transform: rotate(180deg) translate(-100%,-100%);
+  -ms-transform: rotate(180deg) translateX(-100%,-100%);
+  transition: .3s;
+}
+
+.rotate-reset {
+  transform: rotate(0deg);
+  transition: .3s;
 }
 
 ul {
@@ -24,7 +49,6 @@ ul {
 h1 {
   font-size: 1.5em;
   font-weight: bold;
-  margin-top: 3%;
 }
 
 
@@ -33,8 +57,10 @@ a {
   text-decoration: none;
 }
 
-header {
+nav {
   float: left;
+  margin: 0px auto;
+  max-width: 1920px;
   padding-bottom: 2.25%;
   width: 100%;
 }
@@ -44,7 +70,7 @@ header {
   width: 6%;
 }
 
-.listorder--float {
+.float--left {
   float: left;
 }
 
@@ -53,19 +79,19 @@ header {
   width: 20%;
 }
 
-.main__nav {
-  float: left;
+.primarynav {
+  height: auto;
+  margin-top: 1%;
   width: 70%;
 }
 
-.main__nav li {
+.primarynav li {
   font-size: 1em;
   font-weight: bold;
   width: 25%;
 }
 
 .socialmedia {
-  float: left;
   text-align: right;
   width: 10%;
 }
@@ -74,43 +100,48 @@ header {
   width: 33.333%;
 }
 
-#secondary__nav--design--container, #secondary__nav--photography--container{
+/*#secondary__nav--design--container, #secondary__nav--photography--container{
   background: blue;
   clear: both;
-  padding-top: 1%;
-  padding-bottom: 2%;
+  padding: 2%;
   vertical-align: middle;
   width: 100%;
-}
+}*/
 
-#secondary__nav--design {
-  clear: both;
+#secondary-nav--design {
   color: white;
   background: blue;
   margin: 0 auto;
-  width: 40%;
+  max-width: 1920px;
+  padding: 2%;
+  width: 50%;
 }
 
-#secondary__nav--design li {
+#secondary-nav--design li {
   text-align: center;
+  margin: 0px auto;
   width: 33.333%;
 }
 
-#secondary__nav--photography {
-  clear: both;
+#secondary-nav--photography {
   color: white;
   background: blue;
   margin: 0 auto;
-  width: 25%;
+  max-width: 1920px;
+  padding: 2%;
+  width: 50%;
 }
 
-#secondary__nav--photography li {
+#secondary-nav--photography li {
   text-align: center;
   width: 50%;
 }
 
 .imagegallery {
+  display: block;
   overflow: hidden;
+  margin: 0 auto;
+  max-width: 1920px;
   width: 100%;
 }
 

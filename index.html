@@ -4,75 +4,69 @@
     <meta charset="UTF-8">
     <title>Justin Hernandez</title>
     <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
-
+    <link rel="stylesheet" href="css/reset.css"  type="text/css" />
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
   </head>
 
   <body>
-    <header>
+    <nav>
+      <div class="container clearfix">
         <div class="logo">
           <h1><a href="#">Justin Hernandez</a></h1>
         </div> <!-- End Logo -->
-        <div class="main__nav">
+        <div class="primarynav float--left">
           <ul>
-            <li class="listorder--float" id="showSecondaryNav__Design">
-              <a href="#">Design Work
-              <img src="images/arrow_down.svg" class="arrow"></a>
+            <li class="float--left">
+              <a href="#" id="toggleDesignMenu">Design Work<img src="images/arrow.svg" class="arrow rotateDesign"></a>
             </li>
 
-            <li class="listorder--float hide" id="hideSecondaryNav__Design">
-              <a href="#">Design Work<img src="images/arrow_up.svg" class="arrow"></a>
+            <li class="float--left">
+              <a href="#" id="togglePhotographyMenu">Photography<img src="images/arrow.svg" class="arrow"></a>
             </li>
 
-            <li class="listorder--float" id="showSecondaryNav__Photography">
-              <a href="#">Photography
-              <img src="images/arrow_down.svg" class="arrow"></a>
+            <li class="float--left">
+              <a href="#">Personal Project</a>
             </li>
-
-            <li class="listorder--float hide" id="hideSecondaryNav__Photography">
-              <a href="#">Photography<img src="images/arrow_up.svg" class="arrow"></a>
+            <li class="float--left">
+              <a href="#">About Me</a>
             </li>
-
-            <li class="listorder--float"><a href="#">Personal Project</a></li>
-            <li class="listorder--float"><a href="#">About Me</a></li>
-
           </ul>
-
-        </div> <!-- End Main Nav -->
-        <div class="socialmedia">
+        </div> <!-- End Primary Nav -->
+        <div class="socialmedia float--left">
           <ul>
-            <li class="listorder--float"><a href="#"><img src="http//placehold.it/75x75"></a></li>
-            <li class="listorder--float"><a href="#"><img src="http//placehold.it/75x75"></a></li>
-            <li class="listorder--float"><a href="#"><img src="http//placehold.it/75x75"></a></li>
+            <li class="float--left"><a href="#"><img src="http//placehold.it/75x75"></a></li>
+            <li class="float--left"><a href="#"><img src="http//placehold.it/75x75"></a></li>
+            <li class="float--left"><a href="#"><img src="http//placehold.it/75x75"></a></li>
           </ul>
         </div> <!-- End Social Media -->
-        <div class="clearfix hide" id="secondary__nav--design--container">
-          <div id="secondary__nav--design">
-            <ul>
-              <li class="listorder--float"><a href="dailygreens.html">Daily Greens</a></li>
-              <li class="listorder--float"><a href="#">Texas Junk Fest</a></li>
-              <li class="listorder--float"><a href="#">Anti-Smoking Ad</a></li>
-            </ul>
-          </div><!-- End Secondary Nav Design -->
-        </div> <!-- End Secondary Nav Design Container -->
+      </div> <!-- End Container -->
+      <div class="container clearfix blue">
+        <div id="secondary-nav--design" class="hide clearfix">
+          <ul class="clearfix">
+            <li class="float--left"><a href="dailygreens.html">Daily Greens</a></li>
+            <li class="float--left"><a href="#">Texas Junk Fest</a></li>
+            <li class="float--left"><a href="#">Anti-Smoking Ad</a></li>
+          </ul>
+        </div><!-- End Secondary Nav Design -->
+      </div> <!-- End Secondary Nav Design Container -->
 
-        <div class="clearfix hide" id="secondary__nav--photography--container">
-          <div id="secondary__nav--photography">
-            <ul>
-              <li class="listorder--float"><a href="architecture.html">Architecture</a></li>
-              <li class="listorder--float"><a href="#">Color Minimal</a></li>
-            </ul>
-          </div><!-- End Secondary Nav Design -->
-        </div> <!-- End Secondary Nav Design Container -->
+      <div class="container clearfix blue">
+        <div id="secondary-nav--photography" class="hide clearfix">
+          <ul class="clearfix">
+            <li class="float--left"><a href="architecture.html">Architecture</a></li>
+            <li class="float--left"><a href="#">Color Minimal</a></li>
+          </ul>
+        </div><!-- End Secondary Nav Design -->
+      </div> <!-- End Secondary Nav Design Container -->
+    </nav> <!-- End Nav -->
 
-    </header> <!-- End Header -->
-
-    <div class="imagegallery clearfix">
+    <div class="imagegallery">
       <img src="http://placehold.it/1920x1080">
     </div><!-- End Image Gallery -->
 
 
 
-    <script src="http://codepen.io/assets/libs/fullpage/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
