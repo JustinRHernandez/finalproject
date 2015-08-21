@@ -1,46 +1,30 @@
-
-  // var h = $("header").height();
-  // $(".main__nav").height(h);
-  // $(".socialmedia").height(h);
 $(document).ready(function() {
-  // var isMenuOpen = false;
+  var designMenuOpen = false;
+  var photoMenuOpen = false;
       function toggleMenuDesign(){
         event.preventDefault();
+        var designMenuOpen = true;
     		$("#secondary-nav--design").slideToggle();
-        angle = (angle+90)%360;
-        img.rotateDesign = "rotate"+angle;
-        // $(".rotateDesign").toggleClass("rotate-reset");
+        if (photoMenuOpen = true) {
+          $("#secondary-nav--design").show();
+          $("#secondary-nav--photography").hide();
+        }
       }
 
       function toggleMenuPhotography(){
         event.preventDefault();
+        var photoMenuOpen = true;
         $("#secondary-nav--photography").slideToggle();
+        if (designMenuOpen = true) {
+          $("#secondary-nav--photography").show();
+          $("#secondary-nav--design").hide();
+        }
       }
 
         $("#toggleDesignMenu").click(toggleMenuDesign);
         $("#togglePhotographyMenu").click(toggleMenuPhotography);
 
-    // function hideSecondaryNavDesign(){
-    //   event.preventDefault();
-  	// 	$("#secondary__nav--design--container").slideUp();
-    //   $("#hideSecondaryNav__Design").hide();
-    //   $("#showSecondaryNav__Design").show();
-    // }
-    // $("#hideSecondaryNav__Design").click(hideSecondaryNavDesign);
-    //
-    // function showSecondaryNavPhotography(){
-    //   event.preventDefault();
-    //   $("#secondary__nav--photography--container").slideDown();
-    //   $("#showSecondaryNav__Photography").hide();
-    //   $("#hideSecondaryNav__Photography").show();
-    // }
-    // $("#showSecondaryNav__Photography").click(showSecondaryNavPhotography);
-    //
-    // function hideSecondaryNavPhotography(){
-    //   event.preventDefault();
-    //   $("#secondary__nav--photography--container").slideUp();
-    //   $("#hideSecondaryNav__Photography").hide();
-    //   $("#showSecondaryNav__Photography").show();
-    // }
-    // $("#hideSecondaryNav__Photography").click(hideSecondaryNavPhotography);
+
+
+
 });
