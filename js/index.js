@@ -24,6 +24,11 @@ $(document).ready(function() {
         $("#toggleDesignMenu").click(toggleMenuDesign);
         $("#togglePhotographyMenu").click(toggleMenuPhotography);
 
+        $(".royalSlider").royalSlider({
+          autoScaleSlider: true,
+          loop: true,
+          keyboardNavEnabled: true
+                });
 
 
 

@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
     <link rel="stylesheet" href="css/reset.css"  type="text/css" />
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
-  </head>
+    <link rel="stylesheet" href="royalslider/royalslider.css">
+    <link rel="stylesheet" href="royalslider/skins/default/rs-minimal-white.css">   </head>
 
   <body>
     <nav>
@@ -59,13 +60,19 @@
         </div><!-- End Secondary Nav Design -->
       </div> <!-- End Secondary Nav Design Container -->
     </nav> <!-- End Nav -->
+    <div id="imageGallery">
+    <div class="royalSlider rsDefault">
+        <!-- simple image -->
+        <img class="rsImg" src="images/test1.jpg" alt="image description" />
+        <img class="rsImg" src="images/test2.jpg" alt="image description" />
+        <img class="rsImg" src="images/test3.jpg" alt="image description" />
+    </div><!-- End Royal Slider -->
 
-    <div id="imagegallery">
-      <a href="#" onclick="next()"><img src="next.png"/></a>
     </div><!-- End Image Gallery -->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="royalslider/jquery.royalslider.min.js"></script>
   </body>
 </html>
