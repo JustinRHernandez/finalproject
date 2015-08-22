@@ -80,6 +80,8 @@ nav {
 }
 
 .primarynav {
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
   height: auto;
   margin-top: 1%;
   width: 70%;
