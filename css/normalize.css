@@ -289,11 +289,6 @@ dd {
  * Addresses paddings set differently in IE6/7.
  */
 
-menu,
-ol,
-ul {
-    padding: 0 0 0 40px;
-}
 
 /*
  * Corrects list images handled incorrectly in IE7.
