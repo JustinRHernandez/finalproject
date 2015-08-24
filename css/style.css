@@ -1,3 +1,10 @@
+#wrapper {
+  float: left;
+  margin: 0 auto;
+  padding-top: 3%;
+  width: 100%
+}
+
 .blue {
   background: blue;
 }
@@ -119,17 +126,16 @@ nav {
 /* Begin image gallery styling */
 
 
-.imageGallery {
+#imageGallery {
   float: left;
-  height: 100%;
+  margin: 0 auto;
   width: 85%;
 }
 
-.imageGallery img {
+#imageGallery img {
   height: auto;
   max-width: 100%;
 }
-
 
 /* Begin Styling for Design Projects */
 

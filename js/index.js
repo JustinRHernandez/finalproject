@@ -1,4 +1,14 @@
 $(document).ready(function() {
+
+  $(".royalSlider").royalSlider({
+    autoScaleSlider: true,
+    autoScaleSliderWidth: 750,
+    autoScaleHeight: 700,
+    loop: true,
+    imageScaleMode: "fill",
+    keyboardNavEnabled: true
+          });
+
   var designMenuOpen = false;
   var photoMenuOpen = false;
       function toggleMenuDesign(){
@@ -11,11 +21,9 @@ $(document).ready(function() {
         }
       }
 
+
         $("#toggleDesignMenu").click(toggleMenuDesign);
         $("#togglePhotographyMenu").click(toggleMenuPhotography);
-
-
-
 
 
 });
