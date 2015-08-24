@@ -1,6 +1,6 @@
-body {
-  max-width: 100%;
-  padding: 1%;
+html, body {
+  margin: 0 auto;
+  width: 100%;
 }
 
 .blue {
@@ -61,7 +61,7 @@ nav {
   float: left;
   margin: 0px auto;
   max-width: 1920px;
-  padding-bottom: 2.25%;
+  padding: 2%;
   width: 100%;
 }
 
@@ -75,7 +75,9 @@ nav {
 }
 
 .logo {
+  font-size: 1em;
   float: left;
+  padding: 0 0 2% 2%;
   width: 20%;
 }
 
@@ -84,7 +86,7 @@ nav {
   font-weight: 400;
   height: auto;
   margin-top: 1%;
-  width: 70%;
+  width: 64%;
 }
 
 .primarynav li {
@@ -102,14 +104,6 @@ nav {
   width: 33.333%;
 }
 
-/*#secondary__nav--design--container, #secondary__nav--photography--container{
-  background: blue;
-  clear: both;
-  padding: 2%;
-  vertical-align: middle;
-  width: 100%;
-}*/
-
 #secondary-nav--design {
   color: white;
   background: blue;
@@ -125,26 +119,21 @@ nav {
   width: 33.333%;
 }
 
-#secondary-nav--photography {
-  color: white;
-  background: blue;
-  margin: 0 auto;
-  max-width: 1920px;
-  padding: 2%;
-  width: 50%;
-}
-
-#secondary-nav--photography li {
-  text-align: center;
-  width: 50%;
-}
 
 .imagegallery {
-  display: block;
-  overflow: hidden;
-  margin: 0 auto;
-  max-width: 1920px;
+  clear: both;
+  height: 100%;
   width: 100%;
+}
+
+.fullwidthimg {
+  clear: both;
+}
+
+.fullwidthimg img {
+  clear: both;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /* Begin Styling for Design Projects */
@@ -174,3 +163,5 @@ nav {
   margin-top: 2%;
   width: 38%;
 }
+
+/* End Styling for Design Projects */
