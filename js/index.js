@@ -3,9 +3,9 @@ $(document).ready(function() {
   $(".royalSlider").royalSlider({
     autoScaleSlider: true,
     autoScaleSliderWidth: 750,
-    autoScaleHeight: 700,
+    autoScaleSliderHeight: 415,
     loop: true,
-    imageScaleMode: "fill",
+    imageScaleMode: "fit-if-smaller",
     keyboardNavEnabled: true
           });
 

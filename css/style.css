@@ -114,14 +114,17 @@ nav {
 
 .socialmedia {
   float: left;
-  text-align: right;
+  text-align: center;
 }
 
 .socialmedia li {
   float: left;
-  width: 33.333%;
+  width: 20%;
 }
 
+.socialmedia img {
+  width: 70%;
+}
 
 /* Begin image gallery styling */
 
@@ -134,7 +137,7 @@ nav {
 
 #imageGallery img {
   height: auto;
-  max-width: 100%;
+  max-width: 98%;
 }
 
 /* Begin Styling for Design Projects */
