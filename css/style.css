@@ -1,3 +1,9 @@
+/********** UNIVERSAL STYLING *********/
+body {
+  height: auto;
+}
+
+
 #wrapper {
   float: left;
   margin: 0 auto;
@@ -25,37 +31,10 @@
   display: none;
 }
 
-.navcontainer {
-  margin: 0 auto;
-  overflow: hidden;
-  width: 80%;
-}
-
-.container {
-  margin: 0px auto;
-  width: 100%;
-}
-
-.rotate {
-  transform: rotate(180deg) translate(-100%,-100%);
-  -webkit-transform: rotate(180deg) translate(-100%,-100%);
-  -ms-transform: rotate(180deg) translateX(-100%,-100%);
-  transition: .3s;
-}
-
-.rotate-reset {
-  transform: rotate(0deg);
-  transition: .3s;
-}
-
 ul {
   list-style: none;
 }
 
-.logo h1 {
-  font-size: 2em;
-  font-weight: bold;
-}
 
 
 a {
@@ -63,12 +42,6 @@ a {
   text-decoration: none;
 }
 
-nav {
-  float: left;
-  margin: 0px auto;
-  max-width: 1920px;
-  width: 15%;
-}
 
 .arrow {
   padding-left: 4%;
@@ -79,35 +52,75 @@ nav {
   float: left;
 }
 
-.logo {
-  font-size: 1em;
+.container {
+  margin: 0px auto;
   width: 100%;
+}
+
+
+/******** NAV STYLING **********/
+
+
+.navcontainer {
+  margin-left: 20%;
+  overflow: hidden;
+  margin-top: 0;
+  width: 100%;
+}
+
+.logo h1 {
+  font-size: 1.65em;
+  font-weight: lighter;
+  letter-spacing: .025em;
+  margin-bottom: 3%;
+  margin-top: 0;
+  width: 100%;
+}
+
+nav {
+  display: block;
+  float: left;
+  height: 100%;
+  width: 15%;
+}
+
+.logo {
+  padding-bottom: 10%;
+  width: 100%;
+}
+
+.logosubtitle {
+  font-size: .75em;
+  margin-top: 0;
 }
 
 .primarynav, #secondary-nav--design {
   float: left;
-  font-family: 'Futura', sans-serif;
-  font-weight: 100;
+  font-weight: lighter;
   margin: 0 auto;
   width: 100%;
 }
 
 .primarynav ul {
+  float: left;
   margin: 0 auto;
-  padding-left: 15%;
+  padding-bottom: 5%;
   width: 100%;
 }
 
 #secondary-nav--design ul {
+  display: block;
+  float: left;
   overflow: hidden;
   padding: 5%;
 }
 
 .primarynav li, #secondary-nav--design li {
   float: left;
-  font-size: 1em;
+  font-size: .95em;
+  font-weight: lighter;
   margin: 0 auto;
-  padding: 3%;
+  padding-bottom: 5%;
   text-align: left;
   width: 100%;
 }
@@ -118,38 +131,40 @@ nav {
 }
 
 .socialmedia li {
+  display: block;
   float: left;
   width: 20%;
 }
 
 .socialmedia img {
-  width: 70%;
+  width: 50%;
 }
 
-/* Begin image gallery styling */
+/******** Image gallery styling *********/
 
 
 #imageGallery {
   float: left;
   margin: 0 auto;
-  width: 85%;
+  width: 83%;
 }
 
-#imageGallery img {
-  height: auto;
-  max-width: 98%;
-}
+
 
 /* Begin Styling for Design Projects */
 
 .projectcontainer {
-  clear: both;
-  width: 100%;
+  float: left;
+  width: 80%;
 }
 
 .projecthero {
   float: left;
   width: 60%;
+}
+
+.projecthero img {
+  width: 100%;
 }
 .projectdescription {
   float: left;

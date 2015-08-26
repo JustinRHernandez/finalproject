@@ -2,10 +2,11 @@ $(document).ready(function() {
 
   $(".royalSlider").royalSlider({
     autoScaleSlider: true,
-    autoScaleSliderWidth: 750,
-    autoScaleSliderHeight: 415,
+    autoScaleSliderHeight: 475,
     loop: true,
-    imageScaleMode: "fit-if-smaller",
+    transitionType: "fade",
+    transitionSpeed: 400,
+
     keyboardNavEnabled: true
           });
 

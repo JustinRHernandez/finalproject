@@ -78,6 +78,7 @@
 	-o-transition:opacity 0.3s linear;
 	transition:opacity 0.3s linear;
 }
+
 .rsHidden {
 	opacity: 0;
 	visibility: hidden;
@@ -123,7 +124,6 @@
 	top: 0;
 	display: block;
 	overflow: hidden;
-
 	height: 100%;
 	width: 100%;
 }
