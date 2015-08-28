@@ -45,7 +45,7 @@ a {
 
 .arrow {
   padding-left: 4%;
-  width: 6%;
+  width: 5%;
 }
 
 .float--left {
@@ -94,7 +94,11 @@ nav {
   margin-top: 0;
 }
 
-.primarynav, #secondary-nav--design {
+.primarynav{
+  float: left;
+}
+
+.secondarynav {
   float: left;
   font-weight: lighter;
   margin: 0 auto;
@@ -108,14 +112,12 @@ nav {
   width: 100%;
 }
 
-#secondary-nav--design ul {
-  display: block;
+.secondarynav ul {
   float: left;
-  overflow: hidden;
   padding: 5%;
 }
 
-.primarynav li, #secondary-nav--design li {
+.primarynav li {
   float: left;
   font-size: .95em;
   font-weight: lighter;
@@ -155,7 +157,7 @@ nav {
 
 .projectcontainer {
   float: left;
-  width: 80%;
+  width: 83%;
 }
 
 .projecthero {
@@ -168,19 +170,23 @@ nav {
 }
 .projectdescription {
   float: left;
-  width: 39%;
+  margin-left: 3%;
+  width: 36%;
 }
 
 .projectimage--largehorizontal {
   float: left;
   margin-top: 2%;
+  overflow: hidden;
   width: 60%;
 }
 
 .projectimage--largevertical {
   float: left;
+  margin-left: 3%;
   margin-top: 2%;
-  width: 38%;
+  overflow: hidden;
+  width: 37%;
 }
 
 /* End Styling for Design Projects */
