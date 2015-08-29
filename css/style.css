@@ -104,10 +104,6 @@ nav {
   display: none;
 }
 
-.hidemobile {
-  display: none;
-}
-
 .secondarynav {
   float: left;
   font-weight: lighter;
@@ -242,7 +238,7 @@ nav {
 }
 
 .hidemobile {
-  display: block;
+  display: none;
 }
 
 .logo {
@@ -264,7 +260,6 @@ nav {
 }
 
 .primarynav {
-  display: none;
   font-size: 1.5em;
   height: 100%;
   text-align: center;
@@ -324,6 +319,59 @@ nav {
 
 .socialmedia img {
   width: 50%;
+}
+
+
+
+
+/***** Mobile Styling for design projects ******/
+
+.projectcontainer {
+  float: none;
+  margin-top: 5%;
+  width: 100%;
+}
+
+.projecthero {
+  float: none;
+  width: 100%;
+}
+
+.projecthero img {
+  max-width: 92%;
+  max-height: 92%;
+  padding: 0% 4% 4% 4%;
+}
+.projectdescription {
+  float: none;
+  height: 100%;
+  margin: 0 auto;
+  width: 92%;
+}
+
+.projectimage--largehorizontal {
+  float: none;
+  margin: 0;
+  width: 100%;
+}
+
+.projectimage--largevertical {
+  float: none;
+  margin-left: 0;
+  width: 100%;
+}
+
+.projectimage--largehorizontal img {
+  max-width: 92%;
+  max-height: 92%;
+  padding: 0% 4% 4% 4%;
+}
+
+.projectimage--largevertical img {
+  margin-left: 0;
+  max-width: 92%;
+  max-height: 92%;
+  padding: 0% 4% 4% 4%;
 }
 
 }
