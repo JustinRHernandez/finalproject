@@ -1,3 +1,5 @@
+@media (max-width: 2560px) {
+
 /********** UNIVERSAL STYLING *********/
 body {
   height: auto;
@@ -62,6 +64,7 @@ a {
 
 
 .navcontainer {
+  float: left;
   margin-left: 20%;
   overflow: hidden;
   margin-top: 0;
@@ -190,3 +193,73 @@ nav {
 }
 
 /* End Styling for Design Projects */
+
+}
+
+
+
+
+
+
+
+
+/**************************************
+***************************************
+Mobile Styling
+***************************************
+**************************************/
+
+
+@media (max-width: 768px) {
+
+nav {
+  float: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.arrow {
+  margin: 0 auto;
+  width: 1.5%;
+}
+
+.navcontainer {
+  background: red;
+  display: block;
+  float: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.primarynav {
+  display: block;
+  float: none;
+  text-align: center;
+  width: 100%;
+}
+
+.primarynav li {
+  text-align: center;
+  width: 100%;
+}
+
+#imageGallery {
+  float: none;
+  width: 100%;
+}
+
+.royalSlider {
+  display: none;
+}
+
+#imageGalleryMobile {
+  display: block;
+}
+
+}
