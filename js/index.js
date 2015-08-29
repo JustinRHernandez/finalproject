@@ -1,6 +1,7 @@
 $(document).ready(function() {
   var designMenuOpen = false;
   var photoMenuOpen = false;
+  var mobileMenuOpen = false;
 
       function toggleMenuDesign(){
         event.preventDefault();
@@ -14,8 +15,15 @@ $(document).ready(function() {
         $("#secondary-nav--photography").slideToggle(450);
       }
 
+      function toggleMenuMobile(){
+        event.preventDefault();
+        var mobileMenuOpen = true;
+        $(".primarynav").slideToggle(450);
+      }
 
-        $("#toggleDesignMenu,").click(toggleMenuDesign);
+
+
+        $("#toggleDesignMenu").click(toggleMenuDesign);
         $("#togglePhotographyMenu").click(toggleMenuPhotography);
         $("#toggleMenu-Mobile").click(toggleMenuMobile);
         $(".royalSlider").royalSlider({
@@ -27,6 +35,4 @@ $(document).ready(function() {
 
           keyboardNavEnabled: true
         });
-
-
 });
