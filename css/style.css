@@ -5,7 +5,6 @@ body {
   height: auto;
 }
 
-
 #wrapper {
   float: left;
   margin: 0 auto;
@@ -46,6 +45,7 @@ a {
 
 
 .arrow {
+  padding-bottom: .5%;
   padding-left: 4%;
   width: 5%;
 }
@@ -101,6 +101,10 @@ nav {
   float: left;
 }
 
+.navhidemobile {
+  display: none;
+}
+
 .secondarynav {
   float: left;
   font-weight: lighter;
@@ -126,7 +130,6 @@ nav {
   font-weight: lighter;
   margin: 0 auto;
   padding-bottom: 5%;
-  text-align: left;
   width: 100%;
 }
 
@@ -152,6 +155,11 @@ nav {
   float: left;
   margin: 0 auto;
   width: 83%;
+}
+
+#imageGallery img {
+  max-width:100%;
+  max-height:100%;
 }
 
 
@@ -212,14 +220,27 @@ Mobile Styling
 
 @media (max-width: 768px) {
 
+#toggleMenu-Mobile {
+  text-align: center;
+  width: 100%;
+}
+
+#toggleMenu-Mobile h4 {
+  font-size: 1.5em;
+}
+
 nav {
   float: none;
   margin: 0 auto;
   width: 100%;
 }
 
-.logo {
+.navhidemobile {
   display: block;
+}
+
+.logo {
+  padding-bottom: 5%;
   text-align: center;
   width: 100%;
 }
@@ -227,38 +248,29 @@ nav {
 .arrow {
   margin: 0 auto;
   padding-left: 1%;
-  width: 1.5%;
+  width: 1.75%;
 }
 
 .navcontainer {
   background: red;
-  display: block;
   float: none;
   margin: 0 auto;
   width: 100%;
 }
 
 .primarynav {
-  display: block;
-  float: none;
+  display: none;
+  font-size: 1.5em;
   text-align: center;
   width: 100%;
 }
 
-.primarynav li {
-  text-align: center;
-  width: 100%;
+.primarynav ul {
+  padding-bottom: 0;
 }
 
 #imageGallery {
-  float: none;
-  max-width: 100%;
-}
-
-#imageGallery img {
-  float: none;
-  height: auto;
-  max-width: 100%;
+  display: none;
 }
 
 .royalSlider {
@@ -267,18 +279,50 @@ nav {
 
 #imageGalleryMobile {
   display: block;
+  margin-top: 5%;
+  width: 100%;
+}
+
+#imageGalleryMobile img {
+  max-width: 92%;
+  max-height: 92%;
+  padding: 0% 4% 4% 4%;
 }
 
 .secondarynav {
   float: none;
-  margin: 0 auto;
+  margin-bottom: 5%;
   width: 100%;
 }
 
 .secondarynav ul {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  margin-bottom: 5%;
   padding-left: 0;
   text-align: center;
   width: 100%;
+}
+
+.secondarynav ul:last-child {
+  padding-bottom: 3%;
+}
+
+.socialmedia {
+  float: none;
+  margin: 0 auto;
+  width: 33%;
+}
+
+.socialmedia li {
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  width: 33.33%;
+}
+
+.socialmedia img {
+  width: 50%;
 }
 
 }
