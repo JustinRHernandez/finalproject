@@ -43,7 +43,7 @@ $(document).ready(function() {
         $("#toggleMenu-Mobile").click(toggleMenuMobile);
         $(".royalSlider").royalSlider({
           autoScaleSlider: true,
-          autoScaleSliderHeight: 475,
+          autoScaleSliderHeight: 450,
           loop: true,
           transitionType: "fade",
           transitionSpeed: 400,
