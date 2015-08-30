@@ -42,9 +42,13 @@ a {
 }
 
 
-.arrow {
+.arrowDesign {
   padding-bottom: .5%;
-  padding-left: 4%;
+  width: 5%;
+}
+
+.arrowPhoto {
+  padding-bottom: .5%;
   width: 5%;
 }
 
@@ -55,6 +59,17 @@ a {
 .container {
   margin: 0px auto;
   width: 100%;
+}
+
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+
+.marginRight {
+  padding-right: 4%;
 }
 
 
@@ -97,6 +112,7 @@ nav {
 
 .primarynav {
   display: block;
+  height: 100%;
   float: left;
 }
 
@@ -109,6 +125,11 @@ nav {
   font-weight: lighter;
   margin: 0 auto;
   width: 100%;
+}
+
+#secondary-nav--photography {
+  height: 100%;
+  overflow: hidden;
 }
 
 .primarynav ul {
@@ -153,6 +174,7 @@ nav {
 #imageGallery {
   float: left;
   margin: 0 auto;
+  padding-left: 1.5%;
   width: 83%;
 }
 
@@ -205,6 +227,40 @@ nav {
 
 
 
+/**************************************
+***************************************
+Medium Screen Styling
+***************************************
+**************************************/
+
+
+@media (max-width: 1440px) {
+
+
+  #imageGallery {
+    float: left;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  #imageGallery img {
+    max-width:100%;
+    max-height:100%;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -241,15 +297,18 @@ nav {
   display: none;
 }
 
+.marginRight {
+  padding-right: 2%;
+}
+
 .logo {
   padding-bottom: 5%;
   text-align: center;
   width: 100%;
 }
 
-.arrow {
+.arrowDesign, .arrowPhoto {
   margin: 0 auto;
-  padding-left: 1%;
   width: 1.75%;
 }
 
@@ -281,7 +340,7 @@ nav {
 
 #imageGalleryMobile {
   display: block;
-  margin-top: 5%;
+  margin-top: 3%;
   width: 100%;
 }
 
