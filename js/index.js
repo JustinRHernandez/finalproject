@@ -5,6 +5,17 @@ $(document).ready(function() {
   var rotationDesign = 0;
   var rotationPhoto = 0;
 
+  // var docWidth = document.documentElement.offsetWidth;
+  //
+  // [].forEach.call(
+  //   document.querySelectorAll('*'),
+  //   function(el) {
+  //     if (el.offsetWidth > docWidth) {
+  //       console.log(el);
+  //     }
+  //   }
+  // );
+
       function toggleMenuDesign(){
         event.preventDefault();
         var designMenuOpen = true;

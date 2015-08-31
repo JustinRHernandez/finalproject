@@ -1,8 +1,19 @@
+
 @media (max-width: 2560px) {
 
 /********** UNIVERSAL STYLING *********/
 body {
   height: auto;
+}
+
+h4 {
+  font-size: 1.25em !important;
+  font-weight: 800 !important;
+}
+
+p {
+  font-size: 1.75em;
+  font-weight: bold;
 }
 
 #wrapper {
@@ -72,6 +83,9 @@ a {
   padding-right: 4%;
 }
 
+.paddingRightImages {
+  padding-right: 2.5%;
+}
 
 /******** NAV STYLING **********/
 
@@ -155,7 +169,6 @@ nav {
 
 .socialmedia {
   float: left;
-  text-align: center;
 }
 
 .socialmedia li {
@@ -188,17 +201,13 @@ nav {
 /* Begin Styling for Design Projects */
 
 .projectcontainer {
+  font-family: sans-serif;
   float: left;
   width: 83%;
 }
 
 .projectcontainer p {
-  margin-bottom: 3%;
-}
-
-.projectcontainer h2 {
-  font-size: 1.5em;
-  font-weight: bolder;
+  line-height: 1.25em;
   margin-bottom: 3%;
 }
 
@@ -211,16 +220,64 @@ nav {
   width: 100%;
 }
 .projectdescription {
-  float: left;
-  margin-left: 3%;
-  width: 36%;
+  float: none;
+  margin: 0 auto;
+  padding-bottom: 2%;
+  width: 100%;
 }
 
-.projectimage--largehorizontal {
+.projectdescription p {
+  float: left;
+  font-family: serif;
+  font-size: 1.25em;
+  font-weight: 300;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.projectdescription h2 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 4em;
+  font-weight: 800;
+  letter-spacing: .1em;
+  margin-bottom: 4%;
+  padding: 3%;
+  text-align: center;
+  width: 94%;
+}
+
+.dg {
+  background-color: rgb(193,201,127);
+}
+
+.projectdescription h4 {
+  padding-bottom: 2%;
+}
+
+.projectimage--largehorizontal-full {
   float: left;
   margin-top: 2%;
   overflow: hidden;
-  width: 60%;
+  width: 100%;
+}
+
+.projectimage--largehorizontal-full img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.projectimage--largehorizontal-half {
+  float: left;
+  margin-top: 2%;
+  overflow: hidden;
+  width: 48.75%;
+}
+
+.projectimage--largehorizontal-half img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .projectimage--largevertical {
@@ -396,6 +453,10 @@ nav {
 
 /***** Mobile Styling for design projects ******/
 
+.paddingRightImages {
+  padding-right: 0;
+}
+
 .projectcontainer {
   float: none;
   margin-top: 5%;
@@ -416,13 +477,35 @@ nav {
   float: none;
   height: 100%;
   margin: 0 auto;
+  padding-bottom: 10%;
   width: 92%;
 }
 
-.projectimage--largehorizontal {
+.projectdescription p {
+  margin-bottom: 12%;
+}
+
+.projectdescription h2 {
+  margin-bottom: 12%;
+}
+
+.projectdescription h4 {
+  padding-bottom: 5%;
+}
+
+.projectimage--largehorizontal-full {
   float: none;
   margin: 0;
   width: 100%;
+}
+
+.projectimage--largehorizontal-full img, .projectimage--largehorizontal-half img,
+.projectimage--largevertical img,
+.projectimage--largehorizontal img
+ {
+  max-width: 92%;
+  max-height: 92%;
+  padding: 0% 4% 4% 4%;
 }
 
 .projectimage--largevertical {
@@ -431,17 +514,11 @@ nav {
   width: 100%;
 }
 
-.projectimage--largehorizontal img {
-  max-width: 92%;
-  max-height: 92%;
-  padding: 0% 4% 4% 4%;
+.projectimage--largehorizontal-half {
+  float: none;
+  margin: 0;
+  width: 100%;
 }
 
-.projectimage--largevertical img {
-  margin-left: 0;
-  max-width: 92%;
-  max-height: 92%;
-  padding: 0% 4% 4% 4%;
-}
 
 }
