@@ -1,22 +1,20 @@
 $(document).ready(function() {
   var designMenuOpen = false;
+  var photoMenuOpen = false;
   var mobileMenuOpen = false;
   var rotationDesign = 0;
   var rotationPhoto = 0;
-
-  $(".royalSlider").royalSlider({
-    autoScaleSlider: true,
-    autoScaleSliderHeight: 450,
-    loop: true,
-    transitionType: "fade",
-    transitionSpeed: 400,
-    keyboardNavEnabled: true
-  });
 
       function toggleMenuDesign(){
         event.preventDefault();
         var designMenuOpen = true;
     		$("#secondary-nav--design").slideToggle();
+      }
+
+      function toggleMenuPhotography(){
+        event.preventDefault();
+        var photoMenuOpen = true;
+        $("#secondary-nav--photography").slideToggle();
       }
 
       function toggleMenuMobile(){
@@ -43,6 +41,14 @@ $(document).ready(function() {
         $("#toggleDesignMenu").click(toggleMenuDesign);
         $("#togglePhotographyMenu").click(toggleMenuPhotography);
         $("#toggleMenu-Mobile").click(toggleMenuMobile);
+        $(".royalSlider").royalSlider({
+          autoScaleSlider: true,
+          autoScaleSliderHeight: 450,
+          loop: true,
+          transitionType: "fade",
+          transitionSpeed: 400,
+          keyboardNavEnabled: true
+        });
         $("#toggleDesignMenu").click(function(){
             rotationDesign += 180;
             $(this).find(".arrowDesign").rotate(rotationDesign);
@@ -53,6 +59,6 @@ $(document).ready(function() {
                   '-ms-transform' : 'rotate('+ degrees +'deg)',
                   'transform' : 'rotate('+ degrees +'deg)'});
             return $(this);
-            };
+        };
 
 });
