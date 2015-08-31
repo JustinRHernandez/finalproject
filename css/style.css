@@ -192,6 +192,16 @@ nav {
   width: 83%;
 }
 
+.projectcontainer p {
+  margin-bottom: 3%;
+}
+
+.projectcontainer h2 {
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin-bottom: 3%;
+}
+
 .projecthero {
   float: left;
   width: 60%;
