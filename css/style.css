@@ -1,15 +1,42 @@
+
+@media (max-width: 2560px) {
+
+/********** UNIVERSAL STYLING *********/
 body {
-  max-width: 100%;
-  padding: 1%;
+  height: auto;
+}
+
+h4 {
+  font-size: 1.25em !important;
+  font-weight: 800 !important;
+}
+
+p {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+#wrapper {
+  float: left;
+  margin: 0 auto;
+  padding-top: 3%;
+  width: 100%
+}
+
+.blue {
+  background: blue;
 }
 
 .clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.float-none {
   clear: both;
-  height: 0;
 }
 
 .hide {
@@ -18,126 +45,485 @@ body {
 
 ul {
   list-style: none;
-  padding-left: 4%;
 }
-
-h1 {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-top: 3%;
-}
-
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
-header {
+
+.arrowDesign {
+  padding-bottom: .5%;
+  width: 5%;
+}
+
+.arrowPhoto {
+  padding-bottom: .5%;
+  width: 5%;
+}
+
+.float--left {
   float: left;
-  padding-bottom: 2.25%;
+}
+
+.container {
+  margin: 0px auto;
   width: 100%;
 }
 
-.arrow {
-  padding-left: 4%;
-  width: 6%;
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
-.listorder--float {
+.marginRight {
+  padding-right: 4%;
+}
+
+.paddingRightImages {
+  padding-right: 2.5%;
+}
+
+/******** NAV STYLING **********/
+
+
+.navcontainer {
   float: left;
+  margin-left: 20%;
+  overflow: hidden;
+  margin-top: 0;
+  width: 100%;
+}
+
+.logo h1 {
+  font-size: 1.65em;
+  font-weight: lighter;
+  letter-spacing: .025em;
+  margin-bottom: 3%;
+  margin-top: 0;
+  width: 100%;
+}
+
+nav {
+  display: block;
+  float: left;
+  height: 100%;
+  width: 15%;
 }
 
 .logo {
-  float: left;
-  width: 20%;
+  padding-bottom: 10%;
+  width: 100%;
 }
 
-.main__nav {
-  float: left;
-  width: 70%;
+.logosubtitle {
+  font-size: .75em;
+  margin-top: 0;
 }
 
-.main__nav li {
-  font-size: 1em;
-  font-weight: bold;
-  width: 25%;
+.primarynav {
+  display: block;
+  height: 100%;
+  float: left;
+}
+
+#toggleMenu-Mobile {
+  display: none;
+}
+
+.secondarynav {
+  float: left;
+  font-weight: lighter;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#secondary-nav--photography {
+  height: 100%;
+  overflow: hidden;
+}
+
+.primarynav ul {
+  float: left;
+  margin: 0 auto;
+  padding-bottom: 5%;
+  width: 100%;
+}
+
+.secondarynav ul {
+  float: left;
+  padding: 5%;
+}
+
+.primarynav li {
+  float: left;
+  font-size: .95em;
+  font-weight: lighter;
+  margin: 0 auto;
+  padding-bottom: 5%;
+  width: 100%;
 }
 
 .socialmedia {
   float: left;
-  text-align: right;
-  width: 10%;
 }
 
 .socialmedia li {
-  width: 33.333%;
+  display: block;
+  float: left;
+  width: 20%;
 }
 
-#secondary__nav--design--container, #secondary__nav--photography--container{
-  background: blue;
-  clear: both;
-  padding-top: 1%;
-  padding-bottom: 2%;
-  vertical-align: middle;
-  width: 100%;
-}
-
-#secondary__nav--design {
-  clear: both;
-  color: white;
-  background: blue;
-  margin: 0 auto;
-  width: 40%;
-}
-
-#secondary__nav--design li {
-  text-align: center;
-  width: 33.333%;
-}
-
-#secondary__nav--photography {
-  clear: both;
-  color: white;
-  background: blue;
-  margin: 0 auto;
-  width: 25%;
-}
-
-#secondary__nav--photography li {
-  text-align: center;
+.socialmedia img {
   width: 50%;
 }
 
-.imagegallery {
-  overflow: hidden;
-  width: 100%;
+/******** Image gallery styling *********/
+
+
+#imageGallery {
+  float: left;
+  margin: 0 auto;
+  padding-left: 1.5%;
+  width: 83%;
 }
+
+#imageGallery img {
+  max-width:100%;
+  max-height:100%;
+}
+
+
 
 /* Begin Styling for Design Projects */
 
 .projectcontainer {
-  clear: both;
-  width: 100%;
+  font-family: sans-serif;
+  float: left;
+  width: 83%;
+}
+
+.projectcontainer p {
+  line-height: 1.25em;
+  margin-bottom: 3%;
 }
 
 .projecthero {
   float: left;
   width: 60%;
 }
+
+.projecthero img {
+  width: 100%;
+}
 .projectdescription {
-  float: left;
-  width: 39%;
+  float: none;
+  margin: 0 auto;
+  padding-bottom: 2%;
+  width: 100%;
 }
 
-.projectimage--largehorizontal {
+.projectdescription p {
+  float: left;
+  font-family: serif;
+  font-size: 1.25em;
+  font-weight: 300;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.projectdescription h2 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 4em;
+  font-weight: 800;
+  letter-spacing: .1em;
+  margin-bottom: 4%;
+  padding: 3%;
+  text-align: center;
+  width: 94%;
+}
+
+.dg {
+  background-color: rgb(193,201,127);
+}
+
+.tjf {
+  background: #f36f58;
+
+  }
+
+.projectdescription h4 {
+  padding-bottom: 2%;
+}
+
+.projectimage--largehorizontal-full {
   float: left;
   margin-top: 2%;
-  width: 60%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.projectimage--largehorizontal-full img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.projectimage--largehorizontal-half {
+  float: left;
+  margin-top: 2%;
+  overflow: hidden;
+  width: 48.75%;
+}
+
+.projectimage--largehorizontal-half img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .projectimage--largevertical {
   float: left;
+  margin-left: 3%;
   margin-top: 2%;
-  width: 38%;
+  overflow: hidden;
+  width: 37%;
+}
+
+/* End Styling for Design Projects */
+
+}
+
+
+
+/**************************************
+***************************************
+Medium Screen Styling
+***************************************
+**************************************/
+
+
+@media (max-width: 1440px) {
+
+
+  #imageGallery {
+    float: left;
+    margin: 0 auto;
+    width: 83%;
+  }
+
+  #imageGallery img {
+    max-width:100%;
+    max-height:100%;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************
+***************************************
+Mobile Styling
+***************************************
+**************************************/
+
+
+@media (max-width: 768px) {
+
+#toggleMenu-Mobile {
+  display: block;
+  float: left;
+  margin-bottom: 5%;
+  text-align: center;
+  width: 100%;
+}
+
+#toggleMenu-Mobile h4 {
+  font-size: 1.5em;
+}
+
+nav {
+  float: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hidemobile {
+  display: none;
+}
+
+.marginRight {
+  padding-right: 2%;
+}
+
+.logo {
+  padding-bottom: 5%;
+  text-align: center;
+  width: 100%;
+}
+
+.arrowDesign, .arrowPhoto {
+  margin: 0 auto;
+  width: 1.75%;
+}
+
+.navcontainer {
+  float: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.primarynav {
+  display: none;
+  font-size: 1.5em;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.primarynav ul {
+  padding-bottom: 0;
+}
+
+#imageGallery {
+  display: none;
+}
+
+.royalSlider {
+  display: none;
+}
+
+#imageGalleryMobile {
+  display: block;
+  margin-top: 3%;
+  width: 100%;
+}
+
+#imageGalleryMobile img {
+  max-width: 92%;
+  max-height: 92%;
+  padding: 0% 4% 4% 4%;
+}
+
+.secondarynav {
+  float: none;
+  width: 100%;
+}
+
+.secondarynav ul {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  margin-bottom: 5%;
+  padding-left: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.socialmedia {
+  float: none;
+  margin: 0 auto;
+  width: 33%;
+}
+
+.socialmedia li {
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  width: 33.33%;
+}
+
+.socialmedia img {
+  width: 50%;
+}
+
+
+
+
+/***** Mobile Styling for design projects ******/
+
+.paddingRightImages {
+  padding-right: 0;
+}
+
+.projectcontainer {
+  float: none;
+  margin-top: 5%;
+  width: 100%;
+}
+
+.projecthero {
+  float: none;
+  width: 100%;
+}
+
+.projecthero img {
+  max-width: 92%;
+  max-height: 92%;
+  padding: 0% 4% 4% 4%;
+}
+.projectdescription {
+  float: none;
+  height: 100%;
+  margin: 0 auto;
+  padding-bottom: 10%;
+  width: 92%;
+}
+
+.projectdescription p {
+  margin-bottom: 12%;
+}
+
+.projectdescription h2 {
+  margin-bottom: 12%;
+}
+
+.projectdescription h4 {
+  padding-bottom: 5%;
+}
+
+.projectimage--largehorizontal-full {
+  float: none;
+  margin: 0;
+  width: 100%;
+}
+
+.projectimage--largehorizontal-full img, .projectimage--largehorizontal-half img,
+.projectimage--largevertical img,
+.projectimage--largehorizontal img
+ {
+  max-width: 92%;
+  max-height: 92%;
+  padding: 0% 4% 4% 4%;
+}
+
+.projectimage--largevertical {
+  float: none;
+  margin-left: 0;
+  width: 100%;
+}
+
+.projectimage--largehorizontal-half {
+  float: none;
+  margin: 0;
+  width: 100%;
+}
+
+
 }
