@@ -87,6 +87,11 @@ a {
   padding-right: 2.5%;
 }
 
+.title-light {
+  font-weight: 300;
+}
+
+
 /******** NAV STYLING **********/
 
 
@@ -99,8 +104,9 @@ a {
 }
 
 .logo h1 {
+  font-family: 'Oswald' sans-serif;
   font-size: 1.65em;
-  font-weight: lighter;
+  font-weight: 300;
   letter-spacing: .025em;
   margin-bottom: 3%;
   margin-top: 0;
@@ -115,6 +121,7 @@ nav {
 }
 
 .logo {
+  color: #232122;
   padding-bottom: 10%;
   width: 100%;
 }
@@ -125,7 +132,10 @@ nav {
 }
 
 .primarynav {
+  color: #333031;
   display: block;
+  font-family: 'Quattrocento', serif;
+  font-weight: 700;
   height: 100%;
   float: left;
 }
@@ -136,7 +146,6 @@ nav {
 
 .secondarynav {
   float: left;
-  font-weight: lighter;
   margin: 0 auto;
   width: 100%;
 }
@@ -161,10 +170,13 @@ nav {
 .primarynav li {
   float: left;
   font-size: .95em;
-  font-weight: lighter;
   margin: 0 auto;
   padding-bottom: 5%;
   width: 100%;
+}
+
+.primarynav li:hover {
+  color: #a3a2a2;
 }
 
 .socialmedia {
@@ -201,12 +213,13 @@ nav {
 /* Begin Styling for Design Projects */
 
 .projectcontainer {
-  font-family: sans-serif;
   float: left;
-  width: 83%;
+  margin-left: 3%;
+  width: 79%;
 }
 
 .projectcontainer p {
+  font-family: 'Quattrocento', serif;
   line-height: 1.25em;
   margin-bottom: 3%;
 }
@@ -228,9 +241,9 @@ nav {
 
 .projectdescription p {
   float: left;
-  font-family: serif;
   font-size: 1.25em;
   font-weight: 300;
+  line-height: 1.5em;
   margin: 0 auto;
   margin-bottom: 2%;
   width: 100%;
@@ -238,14 +251,21 @@ nav {
 
 .projectdescription h2 {
   color: white;
-  font-family: sans-serif;
+  font-family: 'Oswald' sans-serif;
   font-size: 4em;
-  font-weight: 800;
+  font-weight: 700;
+  line-height: 1.25em;
   letter-spacing: .1em;
   margin-bottom: 4%;
   padding: 3%;
   text-align: center;
   width: 94%;
+}
+
+.projectdescription h4 {
+  color: rgb(36,74,41);
+  font-family: 'Oswald' sans-serif;
+  font-weight: 700;
 }
 
 .dg {
@@ -346,6 +366,10 @@ Mobile Styling
 
 
 @media (max-width: 768px) {
+
+.projectdescription h4 {
+  line-height: 1.5em;
+}
 
 #toggleMenu-Mobile {
   display: block;
